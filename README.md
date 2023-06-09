@@ -115,5 +115,62 @@ mod_dataframe
 def TransformValues(mod_dataframe):
   
 ```
+
 ### Create a profile plot by using either a histogram of density plot
  - With the new dataset we can create a profile plot using a library or package of your choice.
+
+
+#### Example python code to randomly generate a matrix to create a density plot with seaborn
+```python
+import random
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+def generate_random_matrix(rows, columns):
+    matrix = []
+    for _ in range(rows):
+        row = []
+        for _ in range(columns):
+            if random.random() < 0.5:
+                # Known distribution
+                value = np.random.choice([0.2, 1.5, 2.8], p=[0.3, 0.4, 0.3])
+            else:
+                # Unknown random value
+                value = random.uniform(0, 3)
+            value = max(0, min(3, value))  # Ensure value is within range
+            row.append(value)
+        matrix.append(row)
+    return matrix
+
+rows = 1000
+columns = 15
+
+random_matrix = generate_random_matrix(rows, columns)
+
+# Convert the matrix to a flat list
+values = [value for row in random_matrix for value in row]
+
+# Define the category boundaries
+boundary_1 = 1
+boundary_2 = 2
+
+# Plot the density plot
+sns.kdeplot(values)
+plt.xlabel('Value')
+plt.ylabel('Density')
+plt.title('Density Plot')
+
+# Draw vertical lines for the category boundaries
+plt.axvline(x=boundary_1, color='r', linestyle='--', label="5' UTR")
+plt.axvline(x=boundary_2, color='g', linestyle='--', label="CDS Region")
+
+plt.legend()
+
+# Set x-axis limits
+plt.xlim(0, 3)
+
+# Save the plot as a PDF file
+plt.savefig('density_plot.pdf')
+
+```
