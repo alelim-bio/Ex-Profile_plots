@@ -5,7 +5,7 @@ Examples on creating profile plots.
  - The raw dataset should be a table of values where the rows represent each gene and the columns are the values that are associated with the gene. 
  - For this example we will start off with a table of genes that have values associated with basepair position.
 
-###An example for a gene with a length of 1,000 bp: 
+### An example for a gene with a length of 1,000 bp: 
  - | gene_1         | 25 | 30 | 50 | 150 | 250 | 500 | 750 | 850 | 925 |
 
  - This assumes a 1-based coordinate system for each transcript.
