@@ -6,6 +6,7 @@ Examples on creating profile plots.
  - For this example we will start off with a table of genes that have values associated with basepair position.
 
 ### An example for a gene with a length of 1,000 bp: 
+|GENE IDs        |val 1|val 2|val 3|val 4|val 5|val 6|val 7|val 8|val 9|
 |:--------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | gene_1         | 25  | 30  | 50  | 150 | 250 | 500 | 750 | 850 | 925 |
 
