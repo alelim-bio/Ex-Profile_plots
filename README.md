@@ -6,7 +6,8 @@ Examples on creating profile plots.
  - For this example we will start off with a table of genes that have values associated with basepair position.
 
 ### An example for a gene with a length of 1,000 bp: 
- - | gene_1         | 25 | 30 | 50 | 150 | 250 | 500 | 750 | 850 | 925 |
+|:--------------:|:--:|:--:|:--:|:---:|:---:|:---:|:---:|:---:|:---:|
+| gene_1         | 25 | 30 | 50 | 150 | 250 | 500 | 750 | 850 | 925 |
 
  - This assumes a 1-based coordinate system for each transcript.
  - Each value a the position of the detected modification.
@@ -26,28 +27,34 @@ def ClassifyRegionValues():
 - In order to do this we will take each value that's in their respective group adjust the positions to start at 1 and divide it by the group length. 
 #### 5' UTR Example: Length = 200
   -*Since the 5' UTR starts from 1 we don't have to adjust the positions.*
-  -| 5' UTR | 25 | 30 | 50 | 150 |
+|:------:|:--:|:--:|:--:|:---:|
+| 5' UTR | 25 | 30 | 50 | 150 |
   - Position divided by group length.
   - 25 / 200 = 0.125
   30 / 200 = 0.15
   50 / 200 = 0.25
   150 / 200 = 0.75
-  | 5' UTR | 0.125 | 0.150 | 0.25 | 0.75 |
+|:------:|:-----:|:-----:|:----:|:----:|
+| 5' UTR | 0.125 | 0.150 | 0.25 | 0.75 |
 
 #### CDS Example: Length = 600
+|:---:|:---:|:---:|:---:|
 | CDS | 250 | 500 | 750 |
 (Position - 5' UTR length) / CDS length
 (250 - 200) / 600 = 0.0833
 (500 - 200) / 600 = 0.5
 (750 - 200) / 600 = 0.9166
+|:---:|:------:|:---:|:------:|
 | CDS | 0.0833 | 0.5 | 0.9166 |
 
 #### 3' UTR Example: Length = 200
- - | 3' UTR | 25 | 30 | 50 | 150 |
+|:------:|:--:|:--:|:--:|:---:|
+| 3' UTR | 25 | 30 | 50 | 150 |
  - (Position - (5' UTR length + CDS length)) / 3' UTR length
  - (850 - 800) / 200 = 0.25
  - (925 - 800) / 200 = 0.625
- - | 3' UTR | 0.25 | 0.625 | 
+|:------:|:----:|:-----:|
+| 3' UTR | 0.25 | 0.625 | 
 
 #### Merge transformed gene regions
  - After each individual group has it's values transformed, we will adjust the values to be representative of their position relative to the overall gene structure e.g. 5' UTR - CDS - 3' UTR.
