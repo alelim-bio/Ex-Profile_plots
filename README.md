@@ -6,8 +6,8 @@ Examples on creating profile plots.
  - For this example we will start off with a table of genes that have values associated with basepair position.
 
 ### An example for a gene with a length of 1,000 bp: 
-|:--------------:|:--:|:--:|:--:|:---:|:---:|:---:|:---:|:---:|:---:|
-| gene_1         | 25 | 30 | 50 | 150 | 250 | 500 | 750 | 850 | 925 |
+|:--------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| gene_1         | 25  | 30  | 50  | 150 | 250 | 500 | 750 | 850 | 925 |
 
  - This assumes a 1-based coordinate system for each transcript.
  - Each value a the position of the detected modification.
