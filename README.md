@@ -126,6 +126,7 @@ import random
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
 
 def generate_random_matrix(rows, columns):
     matrix = []
@@ -161,14 +162,15 @@ plt.xlabel('Value')
 plt.ylabel('Density')
 plt.title('Density Plot')
 
-# Draw vertical lines for the category boundaries
-plt.axvline(x=boundary_1, color='r', linestyle='--', label="5' UTR")
-plt.axvline(x=boundary_2, color='g', linestyle='--', label="CDS Region")
-
-plt.legend()
+# Draw shaded regions for the categories
+plt.gca().add_patch(Rectangle((0, 0), boundary_1, 1, facecolor='red', alpha=0.2, label="5' UTR"))
+plt.gca().add_patch(Rectangle((boundary_1, 0), boundary_2 - boundary_1, 1, facecolor='green', alpha=0.2, label="CDS Region"))
+plt.gca().add_patch(Rectangle((boundary_2, 0), 3 - boundary_2, 1, facecolor='blue', alpha=0.2, label="3' UTR"))
 
 # Set x-axis limits
 plt.xlim(0, 3)
+
+plt.legend()
 
 # Save the plot as a PDF file
 plt.savefig('density_plot.pdf')
