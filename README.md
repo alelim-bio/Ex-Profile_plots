@@ -34,10 +34,10 @@ def ClassifyRegionValues():
 | 5' UTR | 25  | 30  | 50  | 150 |
 
   - **Eq:** Position divided by group length.
-    1. 25 / 200 = 0.125
-    2. 30 / 200 = 0.15
-    3. 50 / 200 = 0.25
-    4. 150 / 200 = 0.75
+    * 25 / 200 = 0.125
+    * 30 / 200 = 0.15
+    * 50 / 200 = 0.25
+    * 150 / 200 = 0.75
   
 | REGION | val 1 | val 2 | val 3| val 4|
 |:------:|:-----:|:-----:|:----:|:----:|
@@ -49,9 +49,9 @@ def ClassifyRegionValues():
 | CDS    | 250   | 500   | 750  |
 
  - **Eq:** (Position - 5' UTR length) / CDS length
-   1. (250 - 200) / 600 = 0.0833
-   2. (500 - 200) / 600 = 0.5
-   3. (750 - 200) / 600 = 0.9166
+   * (250 - 200) / 600 = 0.0833
+   * (500 - 200) / 600 = 0.5
+   * (750 - 200) / 600 = 0.9166
 
 | REGION | val 1  | val 2 | val 3 |
 |:------:|:------:|:-----:|:-----:|
@@ -63,8 +63,8 @@ def ClassifyRegionValues():
 | 3' UTR | 25    | 30    | 50    |
 
  - **Eq:** (Position - (5' UTR length + CDS length)) / 3' UTR length
-   1. (850 - 800) / 200 = 0.25
-   2. (925 - 800) / 200 = 0.625
+   * (850 - 800) / 200 = 0.25
+   * (925 - 800) / 200 = 0.625
 
 | REGION | val 1 | val 2 | 
 |:------:|:-----:|:-----:|
@@ -76,27 +76,33 @@ def ClassifyRegionValues():
  - Then we will merge all values into a list to be a single gene representation.
 
  - 5' UTR stays in the front so none of these values are changed.
+
  | REGION | val 1 | val 2 | val 3| val 4|
  |:------:|:-----:|:-----:|:----:|:----:|
  | 5' UTR | 0.125 | 0.150 | 0.25 | 0.75 |
 
 - The CDS values is transformed by adding 1 to all values.
+
 | REGION | val 1  | val 2 | val 3  |
 |:------:|:------:|:-----:|:------:|
 | CDS    | 1.0833 | 1.5   | 1.9166 |
 
 - The 3' UTR is transformed by adding 2 to all values.
+
 | REGION | val 1 | val 2 | 
 |:------:|:-----:|:-----:|
 | 3' UTR | 2.25  | 2.625 | 
 
 - Following this we will merge them into a single gene representation.
+
 - **BEFORE**
+
 |GENE IDs        | val 1 | val 2 | val 3| val 4| val 5  |val 6| val 7  | val 8| val 9 |
 |:--------------:|:-----:|:-----:|:----:|:----:|:------:|:---:|:------:|:----:|:-----:|
 | gene_1         | 25    | 30    | 50   | 150  | 250    | 500 | 750    | 850  | 925   |
 
 - **AFTER**
+
 |GENE IDs        | val 1 | val 2 | val 3| val 4| val 5  |val 6| val 7  | val 8| val 9 |
 |:--------------:|:-----:|:-----:|:----:|:----:|:------:|:---:|:------:|:----:|:-----:|
 | gene_1         | 0.125 | 0.150 | 0.25 | 0.75 | 1.0833 | 1.5 | 1.9166 | 2.25 | 2.625 |
