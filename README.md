@@ -27,17 +27,17 @@ def ClassifyRegionValues():
 - After classifying regions we will transform the values to be relative to their overall length of their region. 
 - In order to do this we will take each value that's in their respective group adjust the positions to start at 1 and divide it by the group length. 
 #### 5' UTR Example: Length = 200
-  -*Since the 5' UTR starts from 1 we don't have to adjust the positions.*
+  - **Since the 5' UTR starts from 1 we don't have to adjust the positions.**
   
 | REGION |val 1|val 2|val 3|val 4|
 |:------:|:---:|:---:|:---:|:---:|
 | 5' UTR | 25  | 30  | 50  | 150 |
 
-  - Position divided by group length.
-  - 25 / 200 = 0.125
-  - 30 / 200 = 0.15
-  - 50 / 200 = 0.25
-  - 150 / 200 = 0.75
+  - **Eq:** Position divided by group length.
+    1. 25 / 200 = 0.125
+    2. 30 / 200 = 0.15
+    3. 50 / 200 = 0.25
+    4. 150 / 200 = 0.75
   
 | REGION | val 1 | val 2 | val 3| val 4|
 |:------:|:-----:|:-----:|:----:|:----:|
@@ -48,10 +48,10 @@ def ClassifyRegionValues():
 |:------:|:-----:|:-----:|:----:|
 | CDS    | 250   | 500   | 750  |
 
- - Eq: (Position - 5' UTR length) / CDS length
-  1. (250 - 200) / 600 = 0.0833
-  2. (500 - 200) / 600 = 0.5
-  3. (750 - 200) / 600 = 0.9166
+ - **Eq:** (Position - 5' UTR length) / CDS length
+   1. (250 - 200) / 600 = 0.0833
+   2. (500 - 200) / 600 = 0.5
+   3. (750 - 200) / 600 = 0.9166
 
 | REGION | val 1  | val 2 | val 3 |
 |:------:|:------:|:-----:|:-----:|
@@ -62,9 +62,9 @@ def ClassifyRegionValues():
 |:------:|:-----:|:-----:|:-----:|
 | 3' UTR | 25    | 30    | 50    |
 
- - Eq: (Position - (5' UTR length + CDS length)) / 3' UTR length
-  1. (850 - 800) / 200 = 0.25
-  2. (925 - 800) / 200 = 0.625
+ - **Eq:** (Position - (5' UTR length + CDS length)) / 3' UTR length
+   1. (850 - 800) / 200 = 0.25
+   2. (925 - 800) / 200 = 0.625
 
 | REGION | val 1 | val 2 | 
 |:------:|:-----:|:-----:|
