@@ -1,3 +1,14 @@
+"""
+AtoI Mutation Analysis Script
+Date: June 16, 2023
+
+Description:
+    This script reads a FASTA file containing transcript sequences, a CSV file containing CDS positions,
+    and a TXT file containing inosine positions. It identifies mutations caused by inosine (I) to guanosine (G) conversion,
+    extracts the coding sequences, translates them into protein sequences, and analyzes the mutations for synonymous and
+    non-synonymous changes.
+
+"""
 import csv
 import pandas as pd
 
