@@ -1,6 +1,6 @@
-# Bioinformatics Tutorials and Code Snippets
+# Bioinformatics Toolbox
 
-Welcome to the Bioinformatics Tutorials and Code Snippets repository! This repository is a collection of tutorials, code snippets, and knowledge insights that I've found helpful during my tenure as a bioinformatics researcher. The aim of this repository is to provide a resource for fellow bioinformaticians to learn and apply various techniques in the field.
+Welcome to the Bioinformatics Toolbox repository! This repository is a collection of tutorials, code snippets, and knowledge insights that I've found helpful during my tenure as a bioinformatics researcher. The aim of this repository is to provide a resource for fellow bioinformaticians to learn and apply various techniques in the field.
 
 ## Contents
 
@@ -16,11 +16,11 @@ The repository is organized into the following sections:
 
 Feel free to explore the repository and make use of the content provided. Here are some ways you can utilize this resource:
 
-1. **Tutorials**: Follow the tutorials to learn specific bioinformatics techniques or workflows. Each tutorial is accompanied by code examples and explanations to help you understand the concepts better.
+- **Tutorials**: Follow the tutorials to learn specific bioinformatics techniques or workflows. Each tutorial is accompanied by code examples and explanations to help you understand the concepts better.
 
-2. **Code Snippets**: Browse through the code snippets to find solutions for specific bioinformatics tasks. These snippets can be directly incorporated into your own projects or serve as a reference for similar tasks you encounter.
+- **Code Snippets**: Browse through the code snippets to find solutions for specific bioinformatics tasks. These snippets can be directly incorporated into your own projects or serve as a reference for similar tasks you encounter.
 
-3. **Knowledge Insights**: Gain insights and deepen your understanding of bioinformatics topics through concise explanations and tips provided in the knowledge insights section. Use this section as a quick reference or to clarify any doubts you may have.
+- **Knowledge Insights**: Gain insights and deepen your understanding of bioinformatics topics through concise explanations and tips provided in the knowledge insights section. Use this section as a quick reference or to clarify any doubts you may have.
 
 ## Contributions
 
@@ -28,11 +28,11 @@ Contributions to this repository are welcome! If you have a tutorial, code snipp
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE). Feel free to use the content for educational and non-commercial purposes.
+This repository is licensed under the MIT License. Feel free to use the content for educational and non-commercial purposes.
 
 ## Feedback and Contact
 
-I hope you find this repository helpful. If you have any questions, suggestions, or feedback, please feel free to [contact me](mailto:your-email@example.com). I'm open to improving this resource based on your input.
+I hope you find this repository helpful. If you have any questions, suggestions, or feedback, please feel free to contact me. I'm open to improving this resource based on your input.
 
 Happy coding and bioinformatics exploration!
 
