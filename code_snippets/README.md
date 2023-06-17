@@ -7,7 +7,6 @@ Welcome to the Code Snippets section of the Bioinformatics Toolbox repository! H
 - [Snippet 1: Contig Counting](bash/contig-counting.md)
 - [Snippet 2: Contig Mapping between Two Files](bash/contig-mapping.md)
 - [Snippet 3: Converting GFF3 Files to BED Files](bash/gff3-to-bed.md)
-
 - [Snippet 4: SLURM Headers](bash/slurm_headers.md)
 
 ## Python Snippets
