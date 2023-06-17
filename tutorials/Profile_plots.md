@@ -1,4 +1,4 @@
-
+[Back to Table of Contents](README.md#table-of-contents)
 # Ex-Profile_plots
 Examples on creating profile plots.
 
@@ -177,3 +177,5 @@ plt.legend()
 plt.savefig('density_plot.pdf')
 
 ```
+
+[Back to Table of Contents](README.md#table-of-contents)
