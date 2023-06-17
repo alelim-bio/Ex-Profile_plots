@@ -7,11 +7,8 @@ Welcome to the Bioinformatics Tutorials repository! This repository is a collect
 The repository contains a collection of tutorials covering various bioinformatics topics. Here are some of the tutorial topics available:
 
 - [Profile Plots](Profile_plots.md)
-- [Genome Assembly](genome-assembly.md)
-- [Differential Gene Expression Analysis](differential-expression-analysis.md)
-- [Variant Calling](variant-calling.md)
-- [Gene Ontology Analysis](gene-ontology-analysis.md)
-- [Protein Structure Prediction](protein-structure-prediction.md)
+- [Variant Classification](Variant_classification.md)
+- [Uniprot Pagination](uniprot_pagination.md)
 
 Feel free to explore these tutorials and learn at your own pace.
 
