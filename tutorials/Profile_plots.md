@@ -121,7 +121,7 @@ def TransformValues(mod_dataframe):
  - With the new dataset we can create a profile plot using a library or package of your choice.
 
 
-#### Example python code to randomly generate a matrix to create a density plot with seaborn
+## Example python code to randomly generate a matrix to create a density plot with seaborn
 ```python
 import random
 import numpy as np
