@@ -36,4 +36,4 @@ I hope you find this repository helpful. If you have any questions, suggestions,
 
 Happy coding and bioinformatics exploration!
 
-*[Your Name]*
+*[Alex]*
