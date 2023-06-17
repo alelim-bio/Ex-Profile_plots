@@ -1,3 +1,4 @@
+[Back to Table of Contents](README.md#table-of-contents)
 # Downloading Uniprot protein sequences
 ## Example: Downloading a plant database of protein sequences
 In order to download a large number of transcript sequences you'll have to perform uniprot "pagination". The steps are the following:
@@ -26,3 +27,4 @@ In summary, it allows us to download the requested sequences in batches in order
 
 To begin this process you'll have to create a small bash script in order to loop through the respective download links. You can download in the Linux system using "curl". 
 
+[Back to Table of Contents](README.md#table-of-contents)
