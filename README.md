@@ -6,11 +6,11 @@ Welcome to the Bioinformatics Toolbox repository! This repository is a collectio
 
 The repository is organized into the following sections:
 
-- **Tutorials**: In this section, you'll find step-by-step tutorials covering a range of bioinformatics topics. These tutorials are designed to provide a hands-on approach to understanding key concepts and techniques.
+- [Tutorials](./tutorials): In this section, you'll find step-by-step tutorials covering a range of bioinformatics topics. These tutorials are designed to provide a hands-on approach to understanding key concepts and techniques.
 
-- **Code Snippets**: This section contains small, reusable code snippets that address specific bioinformatics tasks or challenges. These snippets are meant to serve as building blocks for your own projects or as quick references for common bioinformatics operations.
+- [Code Snippets](./code_snippets): This section contains small, reusable code snippets that address specific bioinformatics tasks or challenges. These snippets are meant to serve as building blocks for your own projects or as quick references for common bioinformatics operations.
 
-- **Knowledge Insights**: Here, you'll find concise explanations, tips, and insights on various bioinformatics topics. These insights are aimed at enhancing your understanding of key principles and facilitating your bioinformatics research.
+- [Knowledge Insights](./knowledge_insights): Here, you'll find concise explanations, tips, and insights on various bioinformatics topics. These insights are aimed at enhancing your understanding of key principles and facilitating your bioinformatics research.
 
 ## How to Use
 
