@@ -1,6 +1,6 @@
 [Back to Table of Contents](README.md#table-of-contents)
-# Profile_plots
-Examples on creating profile plots.
+# Profile plots
+Here are some examples of creating profile plots for different situations.
 
 ## Example 1: Creating a profile(density/histogram) plot across all genes in a dataset based on their regions e.g. 5' UTR, CDS, 3' UTR.
  - The raw dataset should be a table of values where the rows represent each gene and the columns are the values that are associated with the gene. 
