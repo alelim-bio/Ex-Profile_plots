@@ -4,23 +4,6 @@ Welcome to the Bioinformatics Tutorials repository! This repository is a collect
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Getting Started](#getting-started)
-- [Tutorial Topics](#tutorial-topics)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
-## Introduction
-
-The Bioinformatics Tutorials repository is designed to provide a comprehensive resource for learning and applying bioinformatics techniques. Whether you are a beginner or an experienced bioinformatician, these tutorials aim to enhance your skills and knowledge in the field.
-
-## Getting Started
-
-Before diving into the tutorials, it's recommended to go through the "Getting Started" guide. This guide provides an overview of the necessary software, tools, and datasets commonly used in bioinformatics. It will help you set up your environment and ensure you have everything you need to follow along with the tutorials.
-
-## Tutorial Topics
-
 The repository contains a collection of tutorials covering various bioinformatics topics. Here are some of the tutorial topics available:
 
 - [Profile Plots](Profile_plots.md)
