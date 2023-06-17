@@ -23,7 +23,7 @@ Before diving into the tutorials, it's recommended to go through the "Getting St
 
 The repository contains a collection of tutorials covering various bioinformatics topics. Here are some of the tutorial topics available:
 
-- [Sequence Alignment](sequence-alignment.md)
+- [Profile Plots](Profile_plots.md)
 - [Genome Assembly](genome-assembly.md)
 - [Differential Gene Expression Analysis](differential-expression-analysis.md)
 - [Variant Calling](variant-calling.md)
