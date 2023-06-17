@@ -11,15 +11,15 @@ Welcome to the Code Snippets section of the Bioinformatics Toolbox repository! H
 
 ## Python Snippets
 
-- [Snippet 4: Contig Counting](python/contig-counting.md)
-- [Snippet 5: Contig Mapping between Two Files](python/contig-mapping.md)
-- [Snippet 6: Converting GFF3 Files to BED Files](python/gff3-to-bed.md)
+- [Snippet 1: Contig Counting](python/contig-counting.md)
+- [Snippet 2: Contig Mapping between Two Files](python/contig-mapping.md)
+- [Snippet 3: Converting GFF3 Files to BED Files](python/gff3-to-bed.md)
 
 ## R Snippets
 
-- [Snippet 7: Contig Counting](r/contig-counting.md)
-- [Snippet 8: Contig Mapping between Two Files](r/contig-mapping.md)
-- [Snippet 9: Converting GFF3 Files to BED Files](r/gff3-to-bed.md)
+- [Snippet 1: Contig Counting](r/contig-counting.md)
+- [Snippet 2: Contig Mapping between Two Files](r/contig-mapping.md)
+- [Snippet 3: Converting GFF3 Files to BED Files](r/gff3-to-bed.md)
 
 Feel free to explore the code snippets and click on the links to access the detailed explanations and examples for each snippet.
 
