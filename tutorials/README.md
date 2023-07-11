@@ -9,6 +9,7 @@ The repository contains a collection of tutorials covering various bioinformatic
 - [Profile Plots](Profile_plots.md)
 - [Variant Classification](Variant_classification.md)
 - [Uniprot Pagination](uniprot_pagination.md)
+- [Volcano Plot from DESeq2](uniprot_pagination.md)
 
 Feel free to explore these tutorials and learn at your own pace.
 
